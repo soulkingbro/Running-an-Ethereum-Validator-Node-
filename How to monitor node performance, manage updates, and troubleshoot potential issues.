@@ -1,0 +1,26 @@
+
+* Here are steps to monitor node performance, manage updates, and troubleshoot potential issues:
+
+1) Monitoring
+
+- Check Prysm dashboard at http://localhost:8080 for sync status, proposals/attestations, rewards etc
+- View logs with `docker logs -f prysm_beacon_chain` to monitor sync, proposals etc  
+- Monitor resources with `docker stats` and system monitoring tools
+
+2) Managing Updates
+
+- Check https://github.com/prysmaticlabs/prysm/releases for latest versions
+- Before updating, backup keys, configs and blockchain data
+- Update Prysm docker image with `docker-compose pull && docker-compose up -d`
+- Update Prysm binaries if a major release 
+
+3) Troubleshooting
+
+- If not syncing, check logs/firewalls and ensure outbound ports are open
+- If proposals/attestations are low, check configs and keys are valid  
+- Monitor system resources for any bottlenecks
+- Rebuild/restart services if issues persist
+- As a last resort, reset blockchain data and resync from scratch
+
+- Common issues include port conflicts, low disk space, outdated software
+- Google forums and Prysm Discord are helpful for specific issues
