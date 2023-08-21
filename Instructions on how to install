@@ -1,0 +1,21 @@
+* Here are the steps to install and configure the necessary components to run a Prysm validator node on Google Cloud following common best practices:
+
+1) Create a new VM instance with a static internal IP and no external IP access. This improves security. Allocate at least 8 vCPUs and 30GB RAM.
+
+2) Generate a password-protected SSH key pair and use the public key to login instead of a password for security. 
+
+3) Hardened the operating system by disabling password authentication, removing unnecessary packages and services, enabling firewall.
+
+4) Install Docker and Docker Compose. Configure Docker to only allow connections from the local host for extra security. 
+
+5) Download and extract the latest Prysm release. This contains all the required binaries and configurations. 
+
+6) Create directories for persistent validator data and wallet files that will survive container restarts. 
+
+7) Configure Prysm's `config.yaml` file with your validator keys, passwords, beacon node endpoints etc. 
+
+8) Use Docker Compose to launch the Prysm services in containers with the `--network host` flag to avoid port mapping issues. 
+
+9) Monitor logs to ensure services start successfully and the beacon node syncs fully before depositing validator funds.
+
+10) Regularly update Prysm to latest versions for security fixes and new features. Back up wallet files and validator keys.
