@@ -1,0 +1,29 @@
+* Here are some helpful resources and tools for managing and maintaining an Ethereum validator node:
+
+1) Documentation:
+- Prysm documentation - https://docs.prylabs.network
+- Ethereum 2.0 specs - https://github.com/ethereum/eth2.0-specs
+
+2) Monitoring & Alerting:
+- Prysm dashboard - http://localhost:8080
+- Prometheus node exporter - https://github.com/prometheus/node_exporter
+- Grafana - https://grafana.com
+- Uptime Robot - https://uptimerobot.com
+
+3) Logging:
+- Docker logs - docker logs -f container
+- LogDNA - https://logdna.com
+
+4) Updates:
+- Prysm GitHub releases - https://github.com/prysmaticlabs/prysm/releases
+- Ansible - https://www.ansible.com
+
+5) Troubleshooting:
+- Prysm Discord - https://discord.gg/KSA7rKs
+- Ethereum StackExchange - https://ethereum.stackexchange.com
+- Google Cloud forums - https://cloud.google.com/community
+
+6)  Infrastructure:
+- Terraform - https://www.terraform.io
+- Ansible - https://www.ansible.com
+- Kubernetes - https://kubernetes.io
