@@ -1,0 +1,17 @@
+* Here are the steps to acquire 32 ETH for staking and depositing into the Ethereum 2.0 deposit contract:
+
+1. Generate a new wallet to hold your validator keys and funds. The easiest way is to use the Prysm CLI tool - `prysmcli keys add validator`
+
+2. Back up both the public and secret key that are printed. Store them securely offline in multiple locations in case of data loss. 
+
+3. Obtain 32 ETH for staking. The best options are using testnets like Goerli or buying on a cryptocurrency exchange. 
+
+4. Transfer the 32 ETH from your wallet to the deposit contract address on the desired network (Goerli, Ropsten etc). You can find the contract address in the Prysm documentation.
+
+5. Deposit the ETH using the `prysmcli` tool. Run `prysmcli validator deposit --amount 32 --contract-address 0x1234...` 
+
+6. Wait for 1-3 epochs (6-12 hours typically) for the deposit to be included before your validator can be activated. 
+
+7. Verify the deposit transaction and amount on a block explorer to ensure success.
+
+8. Secure your validator keys at all times as losing them means permanently locking up your 32 ETH deposit.
